@@ -1,8 +1,20 @@
 {
     "name": "caridea/event",
+    "type": "library",
     "description": "A shrimp of an event library",
-    "version": "0.1.0-alpha",
+    "keywords": ["event", "events", "listener", "observer"],
+    "version": "0.1.0",
+    "homepage": "http://github.com/libreworks/caridea-event",
     "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Caridea Contributors",
+            "homepage": "https://github.com/libreworks/caridea-event/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
     "autoload": {
         "psr-4": {
           "Caridea\\Event\\": "src/"
