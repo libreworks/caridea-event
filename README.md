@@ -7,6 +7,10 @@ This is its event library. It has interfaces for Publisher and Listener, and an 
 
 If you'd like a concrete implementation of `Publisher`, try [caridea-container](https://github.com/libreworks/caridea-container).
 
+[![Build Status](https://travis-ci.org/libreworks/caridea-event.svg)](https://travis-ci.org/libreworks/caridea-event)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/libreworks/caridea-event/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/libreworks/caridea-event/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/libreworks/caridea-event/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/libreworks/caridea-event/?branch=master)
+
 ## Installation
 
 You can install this library using Composer:
