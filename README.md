@@ -11,6 +11,8 @@ If you'd like a concrete implementation of `Publisher`, try [caridea-container](
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/libreworks/caridea-event/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/libreworks/caridea-event/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/libreworks/caridea-event/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/libreworks/caridea-event/?branch=master)
 
+We've also included `.hhi` files for the Hack typechecker.
+
 ## Installation
 
 You can install this library using Composer:
