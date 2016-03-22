@@ -19,7 +19,8 @@ You can install this library using Composer:
 $ composer require caridea/event
 ```
 
-This project requires PHP 5.5 and has no dependencies.
+* The master branch (version 2.x) of this project requires PHP 7.0 and has no dependencies.
+* Version 1.x of this project requires PHP 5.5 and has no dependencies.
 
 ## Compliance
 

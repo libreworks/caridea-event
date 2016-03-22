@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 /**
  * Caridea
  *
@@ -65,7 +66,7 @@ abstract class Event
      *
      * @return float The time of the event
      */
-    public function getWhen()
+    public function getWhen(): float
     {
         return $this->when;
     }
