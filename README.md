@@ -7,6 +7,7 @@ This is its event library. It has interfaces for Publisher and Listener, and an 
 
 If you'd like a concrete implementation of `Publisher`, try [caridea-container](https://github.com/libreworks/caridea-container).
 
+[![Packagist](https://img.shields.io/packagist/v/libreworks/caridea-event.svg)](https://packagist.org/packages/libreworks/caridea-event)
 [![Build Status](https://travis-ci.org/libreworks/caridea-event.svg)](https://travis-ci.org/libreworks/caridea-event)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/libreworks/caridea-event/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/libreworks/caridea-event/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/libreworks/caridea-event/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/libreworks/caridea-event/?branch=master)
@@ -61,4 +62,22 @@ A publisher can be invoked like this:
 // We have somehow registered an \Acme\Foo\CustomEventListener with it.
 $publisher->publish(new \Acme\Foo\CustomEvent());
 // Our CustomEventListener has its ->notify method invoked.
+```
+
+There's a no-op implementation of `Publisher` available as `\Caridea\Event\NullPublisher`.
+
+### PublisherAware
+
+For classes which need the event publisher, you can make use of the `PublisherAware` interface, and optionally the `PublisherSetter` trait.
+
+```php
+class MyClass implements \Caridea\Event\PublisherAware
+{
+    use \Caridea\Event\PublisherSetter;
+
+    public function __construct()
+    {
+        $this->setPublisher(new \Caridea\Event\NullPublisher());
+    }
+}
 ```
