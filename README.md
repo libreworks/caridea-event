@@ -12,8 +12,6 @@ If you'd like a concrete implementation of `Publisher`, try [caridea-container](
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/libreworks/caridea-event/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/libreworks/caridea-event/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/libreworks/caridea-event/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/libreworks/caridea-event/?branch=master)
 
-We've also included `.hhi` files for the Hack typechecker.
-
 ## Installation
 
 You can install this library using Composer:
@@ -22,7 +20,8 @@ You can install this library using Composer:
 $ composer require caridea/event
 ```
 
-* The master branch (version 2.x) of this project requires PHP 7.0 and has no dependencies.
+* The master branch (version 3.x) of this project requires PHP 7.1 and has no dependencies.
+* Version 2.x of this project requires PHP 7.0 and has no dependencies.
 * Version 1.x of this project requires PHP 5.5 and has no dependencies.
 
 ## Compliance
